@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #010a00;
+	background-color: #09070f;
 	text-align: center;
 }
 
@@ -34,20 +34,20 @@ body {
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 	font-size: 8vmin;
 	color: #b0313e;
-	background-color: #014916;
+	background-color: #0090a3;
 	transition: 0.6s;
 }
 
 .box:hover {
-	background-color: #01443a;
+	background-color: #004e5c;
 	transition: linear 0.1s;
 }
 
 #reset-btn {
 	padding: 1rem;
 	font-size: 1.25rem;
-	background-color: #bdfabd;
-	color: #024900;
+	background-color: #4077c9;
+	color: #000e4e;
 	border-radius: 1rem;
 	border: none;
 	font-weight: bold;
@@ -59,8 +59,8 @@ body {
 #reset-btn:hover {
 	padding: 1rem;
 	font-size: 1.25rem;
-	background-color: #2d8614;
-	color: #220049;
+	background-color: #000e4e;
+	color: #4077c9;
 	border-radius: 1rem;
 	border: none;
 	font-weight: bold;
@@ -75,8 +75,8 @@ body {
 #new-btn:hover {
 	padding: 1rem;
 	font-size: 1.25rem;
-	background-color: #327a1e;
-	color: #220049;
+	background-color: #000e4e;
+	color: #4077c9;
 	border-radius: 1rem;
 	border: none;
 	font-weight: bold;
@@ -94,8 +94,8 @@ body {
 	bottom: 350px;
 	padding: 1rem;
 	font-size: 1.25rem;
-	background-color: #bdfabd;
-	color: #024900;
+	background-color: #4077c9;
+	color: #000e4e;
 	border-radius: 1rem;
 	border: none;
 	font-weight: bold;
@@ -105,14 +105,15 @@ body {
 }
 
 #msg {
-	color: #005c0f;
+	color: #002b5c;
 	font-size: 5vmin;
 	transition: ease 0.3s;
 }
 
 #msg:hover {
-	color: #5c004d;
+	color: #0e8aa0;
 	font-size: 5vmin;
+	transform: scale(1.25);
 }
 
 h1 {
@@ -135,7 +136,23 @@ h4 {
 	position: fixed;
 	bottom: 2%;
 	right: 2%;
-	color: #194e0b;
+	color: #034a57;
+	transition: all ease-in-out 0.3s;
+}
+
+a {
+	font: italic bold;
+	text-decoration: none;
+	color: #035742;
+	transition: all ease-in-out 0.3s;
+}
+
+h4:hover {
+	transform: scale(1.25);
+}
+
+a:hover {
+	transform: scale(1.25);
 }
 
 .hide {
