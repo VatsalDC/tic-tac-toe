@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #010a00;
+	text-align: center;
+}
+
+.container {
+	height: 70vh;
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.game {
+	height: 60vmin;
+	width: 60vmin;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5vmin;
+}
+
+.box {
+	height: 18vmin;
+	width: 18vmin;
+	border-radius: 1rem;
+	border: none;
+	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+	font-size: 8vmin;
+	color: #b0313e;
+	background-color: #014916;
+	transition: 0.6s;
+}
+
+.box:hover {
+	background-color: #01443a;
+	transition: linear 0.1s;
+}
+
+#reset-btn {
+	padding: 1rem;
+	font-size: 1.25rem;
+	background-color: #bdfabd;
+	color: #024900;
+	border-radius: 1rem;
+	border: none;
+	font-weight: bold;
+	transition: all 0.4s ease;
+	text-align: center;
+	opacity: 0.5;
+}
+
+#reset-btn:hover {
+	padding: 1rem;
+	font-size: 1.25rem;
+	background-color: #2d8614;
+	color: #220049;
+	border-radius: 1rem;
+	border: none;
+	font-weight: bold;
+	font-weight: 750;
+	opacity: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 10.8px 250px;
+	font-size: 19px;
+}
+
+#new-btn:hover {
+	padding: 1rem;
+	font-size: 1.25rem;
+	background-color: #327a1e;
+	color: #220049;
+	border-radius: 1rem;
+	border: none;
+	font-weight: bold;
+	font-weight: 750;
+	opacity: 1;
+	bottom: 347px;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 10.8px 250px;
+	font-size: 19px;
+}
+
+#new-btn {
+	position: absolute;
+	bottom: 350px;
+	padding: 1rem;
+	font-size: 1.25rem;
+	background-color: #bdfabd;
+	color: #024900;
+	border-radius: 1rem;
+	border: none;
+	font-weight: bold;
+	transition: all 0.4s ease;
+	text-align: center;
+	opacity: 0.5;
+}
+
+#msg {
+	color: #005c0f;
+	font-size: 5vmin;
+	transition: ease 0.3s;
+}
+
+#msg:hover {
+	color: #5c004d;
+	font-size: 5vmin;
+}
+
+h1 {
+	left: 50%;
+	right: 50%;
+	margin-left: 37%;
+	margin-right: 37%;
+}
+
+.msg-container {
+	height: 100vmin;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 4rem;
+}
+
+.hide {
+	display: none;
+}
