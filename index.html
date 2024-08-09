@@ -3,19 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Play tic tac toe with your friend(ONLY MULTIPLAYER)">
-    		<meta name="keywords" content="tic tac toe, tictactoe, tic-tac-toe, multiplayer, game, multiplayergame, multiplayer game, tick tack toe, tik tak toe, crosscircle, cross circle, cross-circle, soon chokat">
-    		<meta name="author" content="Jon Doe">
-		<title ">Tic-Tac-Toe</title>
+		<title ">Tic-Tac-Toe Game</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="msg-container hide">
-			<p id="msg">Winner</p>
-			<button id="new-btn">New Game</button>
+			<p class="msg">Winner</p>
+			<button class="new-btn" role="button"><span class="text"> New Game </span></button>
 		</div>
 		<main>
-			<h1 id="msg" aling="center">Tic Tac Toe</h1>
+			<h1 class="ttt" aling="center">Tic Tac Toe</h1>
 			<div class="container">
 				<div class="game">
 					<button class="box"></button>
@@ -28,9 +25,9 @@
 					<button class="box"></button>
 					<button class="box"></button>
 				</div>
-				<h4>Made by <a href="https://github.com/VatsalDC/tic-tac-toe">Vatsal Chevli</a></h4>
+				<h4 id="credit">Made by <a href="https://github.com/VatsalDC/tic-tac-toe">Vatsal Chevli</a></h4>
 			</div>
-			<button id="reset-btn">Reset Game</button>
+			<button class="reset-btn" role="button"><span class="text"> Restart</span></button>
 		</main>
 		<script src="app.js"></script>
 	</body>
