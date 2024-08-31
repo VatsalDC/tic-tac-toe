@@ -3,35 +3,47 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Play tic tac toe with your friend(ONLY MULTIPLAYER)">
-    		<meta name="keywords" content="tic tac toe, tictactoe, tic-tac-toe, multiplayer, game, multiplayergame, multiplayer game, tick tack toe, tik tak toe, crosscircle, cross circle, cross-circle, soon chokat">
-    		<meta name="author" content="Jon Doe">
-		<title ">Tic-Tac-Toe</title>
+		<meta
+			name="description"
+			content="Tic-Tac-Toe, a game of Circles and Crosses, or Xs and Os is a 'Paper-Pencil' game for
+			 two players who take turns by marking the empty spaces in a three-by-three grid with O or X. The player who Thrive
+			  in placing three of their marks(X | O) in a Horizontal, Vertical, or Diagonal Row is said to be the Winner of the game.
+			  Here you can play Tic-Tac-Toe with your friend. This site has the simplease and most understanding designs so it is ease to understand the game! We'll be adding more games and sub-games in the future"
+		/>
+		<meta
+			name="keywords"
+			content="tic tac toe, tictactoe, tic-tac-toe,single player, single, singleplayergame, singleplayer game, single player game, multiplayer, game, multiplayergame, multiplayer game, tick tack toe, tik tak toe, crosscircle, cross circle, cross-circle, soon chokat, sun chokat, soon chokdi, sun chokdi"
+		/>
+		<meta name="author" content="Vatsal Chevli" />
+		<title>Budget Games</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div class="msg-container hide">
-			<p class="msg">Winner</p>
-			<button class="new-btn" role="button"><span class="text"> New Game </span></button>
-		</div>
-		<main>
-			<h1 class="ttt" aling="center">Tic Tac Toe</h1>
-			<div class="container">
-				<div class="game">
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-					<button class="box"></button>
-				</div>
-				<h4 id="credit">Made by <a href="https://github.com/VatsalDC/tic-tac-toe">Vatsal Chevli</a></h4>
-			</div>
-			<button class="reset-btn" role="button"><span class="text"> Restart</span></button>
-		</main>
-		<script src="app.js"></script>
+		<h1 class="ttt">Tic Tac Toe</h1>
+		<h5>
+			Tic-Tac-Toe, gives traces of being invented in Egypt around
+			1300<sub>BCE</sub>, a game of Circles and Crosses, or Xs and Os is a
+			'Paper-Pencil' game for two players who take turns by marking the
+			empty spaces in a three-by-three grid with O or X. The player who is
+			able to place three of their marks(X | O) in a Horizontal, Vertical,
+			or Diagonal Row gets the title of WINNER. Here you can play
+			Tic-Tac-Toe either with computer or with your friend. This site has
+			the simplest and most understanding designs so it is easy to
+			understand the game!
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<center class="gamemode">Play Against</center>
+		</h5>
+		<center>
+			<button id="spbtn" onclick="window.location='index.html'">
+				Computer
+			</button>
+			<button id="mpbtn" onclick="window.location='multiplayer.html'">
+				Friend (multiplayer)
+			</button>
+		</center>
 	</body>
 </html>
