@@ -19,11 +19,14 @@ const winPatterns = [
 ];
 
 const resetGame = () => {
-	turnO = true;
-	count = 0;
-	enableBoxes();
-	msgContainer.classList.add("hide");
+    turnO = true;
+    count = 0;
+    gameOver = false;
+    enableBoxes();
+    msgContainer.classList.add("hide");
+    boxes.forEach(box => box.style.backgroundColor = ""); // Reset box colors
 };
+
 
 boxes.forEach((box) => {
 	box.addEventListener("click", () => {
@@ -75,26 +78,29 @@ const enableBoxes = () => {
 	}
 };
 
-const showWinner = (winner) => {
-	msg.innerText = `Congratulations, Winner is ${winner}`;
-	msgContainer.classList.remove("hide");
-	disableBoxes();
+const showWinner = (winner, pattern) => {
+    msg.innerText = `Congratulations, Winner is ${winner}`;
+    msgContainer.classList.remove("hide");
+    pattern.forEach(index => {
+        boxes[index].style.backgroundColor = "#50ad94"; // Make winning boxes darker
+    });
+    disableBoxes();
+    gameOver = true;
 };
 
 const checkWinner = () => {
-	for (let pattern of winPatterns) {
-		let pos1Val = boxes[pattern[0]].innerText;
-		let pos2Val = boxes[pattern[1]].innerText;
-		let pos3Val = boxes[pattern[2]].innerText;
-
-		if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
-			if (pos1Val === pos2Val && pos2Val === pos3Val) {
-				showWinner(pos1Val);
-				return true;
-			}
-		}
-	}
+    for (let pattern of winPatterns) {
+        let pos1Val = boxes[pattern[0]].innerText;
+        let pos2Val = boxes[pattern[1]].innerText;
+        let pos3Val = boxes[pattern[2]].innerText;
+        if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
+            if (pos1Val === pos2Val && pos2Val === pos3Val) {
+                showWinner(pos1Val, pattern);
+                return pos1Val;
+            }
+        }
+    }
+    return null;
 };
-
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
