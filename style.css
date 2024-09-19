@@ -176,12 +176,25 @@ body {
 	color: #002b5c;
 	font-size: 10vmin;
 	transition: ease 0.3s;
+	position: sticky;
 }
 
 .msg:hover {
 	color: #0e8aa0;
-	font-size: 9vmin;
-	transform: scale(1.25);
+	transform: scale(1.05);
+}
+.msg2 {
+	color: #002b5c;
+	font-size: 1.8vmin;
+	transition: ease 0.3s;
+	position: absolute;
+	top: 83%;
+
+}
+
+.msg2:hover {
+	color: #0e8aa0;
+	transform: scale(1.35);
 }
 
 .ttt {
