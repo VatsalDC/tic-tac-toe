@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Tic-Tac-Toe, a game of Circles and Crosses, or Xs and Os is a 'Paper-Pencil' game for
+			 two players who take turns by marking the empty spaces in a three-by-three grid with O or X. The player who Thrive
+			  in placing three of their marks(X | O) in a Horizontal, Vertical, or Diagonal Row is said to be the Winner of the game.
+			  Here you can play Tic-Tac-Toe with your friend. This site has the simplease and most understanding designs so it is ease to understand the game! We'll be adding more games and sub-games in the future"
+		/>
+		<meta
+			name="keywords"
+			content="tic tac toe, tictactoe, tic-tac-toe, multiplayer, game, multiplayergame, multiplayer game, tick tack toe, tik tak toe, crosscircle, cross circle, cross-circle, soon chokat"
+		/>
+		<meta name="author" content="Vatsal Chevli" />
+		<title>Single Player Tic.Tac.Toe</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="msg-container hide">
+			<p class="msg">winner</p>
+			<p class="msg2">Scroll down to see the win pattern</p>
+			<button class="new-btn" role="button">
+				<span class="text"> New Game </span>
+			</button>
+		</div>
+		<main>
+			<h1 class="ttt" aling="center">Tic Tac Toe</h1>
+			<div class="container">
+				<div class="game">
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+					<button class="box"></button>
+				</div>
+				<h4 id="credit">
+					Made by
+					<a href="https://github.com/VatsalDC/tic-tac-toe"
+						>Vatsal Chevli</a
+					>
+				</h4>
+			</div>
+			<button class="reset-btn" role="button">
+				<span class="text"> Restart</span>
+			</button>
+		</main>
+
+		<button
+			id="help"
+			class="help"
+			onclick="hideshow()"
+			onmouseover="changetext()"
+			onmouseout="deftext()"
+		>
+			?
+		</button>
+		<script src="sp.js"></script>
+	</body>
+</html>
