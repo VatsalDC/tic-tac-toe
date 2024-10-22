@@ -38,12 +38,13 @@ body {
 	color: #042215;
 	background-color: #0090a3;
 	transition: all ease 0.6s;
+	
+	&:hover {
+		background-color: #004e5c;
+		transition: linear 0.1s;
+	}
 }
 
-.box:hover {
-	background-color: #004e5c;
-	transition: linear 0.1s;
-}
 
 .new-btn {
 	appearance: none;
@@ -75,6 +76,7 @@ body {
 	touch-action: manipulation;
 	vertical-align: baseline;
 	white-space: nowrap;
+	margin-top: 10%;
 }
 .new-btn:hover {
 	color: #4077c9;
@@ -325,7 +327,7 @@ h5 {
 	margin: 5% 5% 5% 5%;
 	padding: 5% 5% 5% 5%;
 	position: static;
-	color: #034a57;
+	color: #026d80;
 	transition: all ease-in-out 0.3s;
 	text-align: justify;
 	text-justify: auto;
@@ -343,7 +345,9 @@ h5 {
 	color: #002b5c;
 	transform: scale(1.25);
 }
-
+#modebtn{
+	justify-content: center;
+}
 #spbtn {
 	position: relative;
 	top: 0px;
@@ -370,7 +374,6 @@ h5 {
 	color: #4077c9;
 	font-weight: 900;
 }
-
 #mpbtn {
 	position: relative;
 	top: 0px;
@@ -397,6 +400,10 @@ h5 {
 	color: #4077c9;
 	font-weight: 900;
 }
+#arrow{
+	margin: 0;
+	padding: 0;
+}
 
 /* For responsive website */
 @media only screen and (max-width: 1137px) {
@@ -407,7 +414,6 @@ h5 {
 	}
 
 	.ttt {
-		color: #002b5c;
 		font-size: 4vmin;
 		transition: ease 0.3s;
 	}
@@ -483,25 +489,27 @@ h5 {
 		font-size: 7.555vmin;
 		transition: ease 0.3s;
 	}
-
 	.ttt {
-		color: #002b5c;
 		margin: 20px 20px;
 		font-size: 7vmin;
 		transition: ease 0.3s;
 	}
 	#credit {
 		position: fixed;
-		bottom: 34%;
-	}
+		bottom: 4%;
 
+	}
 	.container {
+		justify-content: center;
+		padding-top: 95px;
 		padding-bottom: 65px;
 		height: 43vh;
 		display: flex;
 		transition: all ease 0.6s;
-		justify-content: center;
 		align-items: center;
+	}
+	.reset-btn{
+		margin-top: 90px;
 	}
 }
 @media only screen and (max-width: 915px) {
@@ -577,14 +585,13 @@ h5 {
 	}
 
 	.ttt {
-		color: #002b5c;
 		margin: 20px 20px;
 		font-size: 10vmin;
 		transition: ease 0.3s;
 	}
-	#spbtn {
-		left: 0.0001px;
-	}
+     #modebtn{
+	justify-content: center;
+    }
 }
 @media only screen and (max-width: 912px) and (max-height: 1368px) {
 	.new-btn {
@@ -657,20 +664,21 @@ h5 {
 		font-size: 7.555vmin;
 		transition: ease 0.3s;
 	}
-
+.reset-btn{
+	margin-top: 250px;
+}
 	.ttt {
-		color: #002b5c;
+		color: #155bac;
 		margin: 20px 20px;
 		font-size: 10vmin;
 		transition: ease 0.3s;
 	}
 	#credit {
-		position: static;
-		bottom: 25%;
-		left: 2%;
+		bottom: 2%;
+		justify-self: right;
 	}
-
 	.container {
+		padding-top:300px;
 		height: 0vh;
 		display: flex;
 		transition: all ease 0.6s;
@@ -749,19 +757,23 @@ h5 {
 		font-size: 7.555vmin;
 		transition: ease 0.3s;
 	}
-
+.reset-btn{
+	position: sticky;
+	bottom: 1%;
+}
 	.ttt {
-		color: #002b5c;
 		margin: 20px 20px;
 		font-size: 10vmin;
 		transition: ease 0.3s;
 	}
 	#credit {
 		position: fixed;
-		bottom: 22%;
+		bottom: 2%;
+		justify-self: right;
 	}
 
 	.container {
+		padding-top: 20px;
 		height: 50vh;
 		display: flex;
 		transition: all ease 0.6s;
@@ -840,9 +852,24 @@ h5 {
 		font-size: 7.555vmin;
 		transition: ease 0.3s;
 	}
-
+	#spbtn {
+		justify-self: center;
+		position: fixed;
+		width: 250px;
+		top: 70%;
+		left: 25%;
+	}
+	#mpbtn {
+		justify-self: center;
+		position: fixed;
+		width: 250px;
+		top: 77%;
+		left: 25%;
+	}
+	#modebtn{
+	justify-content: center;
+	}
 	.ttt {
-		color: #002b5c;
 		margin: 20px 20px;
 		font-size: 10vmin;
 		transition: ease 0.3s;
@@ -863,7 +890,6 @@ h5 {
 @media only screen and (max-width: 435px) {
 	.ttt {
 		margin: 20px 20px;
-		color: #002b5c;
 		font-size: 12vmin;
 	}
 	.container {
@@ -884,11 +910,15 @@ h5 {
 		color: #042215;
 		background-color: #0090a3;
 		transition: all ease 0.6s;
+	    
+		&:hover {
+			background-color: #004e5c;
+			transition: linear 0.1s;
+		}
 	}
-
-	.box:hover {
-		background-color: #004e5c;
-		transition: linear 0.1s;
+	#info{
+		font-family:Arial, Helvetica, Geneva, Tahoma, sans-serif ;
+		font-size: 4vmin;
 	}
 	#credit {
 		bottom: 0.2%;
@@ -913,4 +943,7 @@ h5 {
 		top: 77%;
 		left: 17.5%;
 	}
+	.help{
+		display: none;
+}
 }
